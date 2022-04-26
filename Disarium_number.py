@@ -1,0 +1,13 @@
+a=int(input())
+temp=a
+d=sum=0
+len=len(str(a))
+while(a>0):
+    d=a%10
+    sum=sum+int(d**len)
+    a=a//10
+    len=len-1
+if(temp==sum):
+    print("True")
+else:
+    print("False")
