@@ -1,11 +1,13 @@
 n=int(input())
 l=list(map(int,input().split()))
 a=[]
-for i in range(n):
-    c=0
-    while l[i]>0:
-        d=l[i]%10
-        l[i]=l[i]//10
+for i in l:
+    k=str(i)
+    k=len(k)
+    a.append(k)
+c=0
+for i in a:
+    if max(a)==i:
         c+=1
-    a.append(c)
-print(a.count(max(a)))
+print(c)
+        
