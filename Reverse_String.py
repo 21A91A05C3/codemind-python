@@ -1,8 +1,6 @@
-def reverse_string(str):
-    str1=("")
-    for i in str:
-        str1=i+str1
-    return str1
-    
-str=input()
-print(reverse_string(str))
+s=input()
+k=s.split(' ')
+l=[]
+for i in k:
+    l.insert(0,i)
+print(" ".join(l))
