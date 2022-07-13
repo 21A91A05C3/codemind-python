@@ -1,4 +1,4 @@
 n=input()
 k=n.split()
-k=list(reversed(k))
+k=reversed(k)
 print(*k)
