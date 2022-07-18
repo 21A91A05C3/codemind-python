@@ -1,13 +1,13 @@
 n=int(input())
-arr=list(map(int,input().split()))
-a=int(input())
-c=0
-l=[]
-for i in set(arr):
-    if arr.count(i)==a:
-        l.append(i)
-        c+=1
-if(c>0):
-    print(*l)
+l=list(map(int,input().split()))
+k=[]
+v=0
+m=int(input())
+for i in l:
+    if l.count(i)==m and i not in k:
+        k.append(i)
+        v+=1
+if v>0:
+    print(*k)
 else:
     print(-1)
