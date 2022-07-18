@@ -1,10 +1,13 @@
 n=int(input())
 l=list(map(int,input().split()))
-l1=[]
+c=0
+a=[]
 for i in l:
-    if i == l.count(i) and i not in l1:
-        l1.append(i)
-if len(l1)==0:
+    if i==l.count(i) and i not in a:
+        a.append(i)
+        c+=1
+
+if c>0:
+    print(*a)
+elif c==0:
     print(-1)
-else:
-    print(*l1)
