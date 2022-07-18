@@ -1,7 +1,6 @@
-s=input()
-s=s.lower()
-l=[]
-for i in s.split():
+n=input().lower()
+v=0
+for i in n.split():
     if i==i[::-1]:
-        l.append(i)
-print(len(l))
+        v+=1
+print(v)
