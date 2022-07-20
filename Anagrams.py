@@ -1,10 +1,10 @@
 n=input().lower()
 m=input().lower()
-v=0
+c=0
 for i in n:
     if i in m:
-        v+=1
-if v==len(n):
+        c+=1
+if len(n)==c:
     print("True")
 else:
     print("False")
